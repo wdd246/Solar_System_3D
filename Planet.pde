@@ -1,5 +1,3 @@
-Planet[] moons;
-
 class Planet{
   float v=0; //speed of solar system
   float speed; 
