@@ -16,8 +16,6 @@ float[] speed = {0.050,0.035,0.03,0.024,0.013,0.0096,0.0068,0.0054,0.0046}; //pl
 float[] planet_radius = {4.5, 12, 15, 6, 153, 124.5, 49.5, 46, 4.5}; //planet radius
 color[] colors={color(204,153,51),color(255,204,153),color(51,204,0),color(255,0,0),color(255,255,204),color(102,255,255),color(51,153,255),color(0,0,255),color(0,0,255)};//planet color
 
-PImage img;
-
 void keyPressed(){
   if(key=='o' || key=='O'){//show orbit
     showOrbit=0.2;
@@ -53,10 +51,10 @@ void setup(){
 void D2(){
     noLoop();
     background(0);
-    //camera=0;
     rotateX(-camera);
     translate(0,0,-zoom);
     float scal=width/9;
+    
     ellipse(0,0,height,height);//sun
     fill(204,153,51);
     ellipse(-4*scal,0,height/300,height/300);

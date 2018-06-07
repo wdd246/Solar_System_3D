@@ -1,16 +1,18 @@
+
+
 class Planet{
   float v=0; //speed of solar system
   float speed; 
   color colors; //planet color
   float orbitR;
   float planetR;
-  int numMoon;
 
   Planet(float speed, float orbitR, float planetR,color colors){
     this.speed=speed;
     this.colors=colors;
     this.orbitR=orbitR;
     this.planetR=planetR;
+   
   }
 
 void show(){
